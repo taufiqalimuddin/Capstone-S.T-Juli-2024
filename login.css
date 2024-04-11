@@ -1,0 +1,148 @@
+body {
+  background: #c6b9a3;
+  font-family: "Inter UI", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.page {
+  background: #c6b9a3;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+
+.content-left {
+  background: #fff;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.login {
+  font-size: 50px;
+  font-weight: 900px;
+  margin: 25px 40px 40px;
+  color: black;
+}
+
+.text {
+  margin: 40px;
+  color: rgb(19, 16, 16);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.content-right {
+  background: #fff;
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+  color: #f1f1f2;
+  position: relative;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.form {
+  margin: 40px;
+  position: absolute;
+}
+
+label {
+  color: #383838;
+  display: block;
+  font-size: 16px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  background: #68686826;
+  border: 0px;
+  color: #3d2c2c;
+  font-size: 20px;
+  height: 34px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
+.submit {
+  color: #fff;
+  margin-top: 40px;
+  transition: color 300ms;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: -webkit-baseline-middle;
+  border: 1px solid transparent;
+  margin-top: 26px;
+  margin-left: 8px;
+  font-size: 16px;
+  border-radius: 4.25rem;
+  width: 93%;
+  background: #c6b9a3;
+}
+
+#submit:focus {
+  color: #fff;
+}
+
+#submti:active {
+  color: #d0d0d2;
+}
+
+/* responsive */
+
+@media (max-width: 767px) {
+  .content-left {
+    height: 24%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
